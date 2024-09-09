@@ -21,19 +21,30 @@
   margin-right: auto;
 }
 
+.nav-item a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 22px;
+  font-weight: 600;
+  color: inherit;
+}
+
+.nav-item:last-child {
+  color: rgb(225, 62, 160);
+  background-color: rgb(26, 26, 26);
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: 3px rgb(168, 168, 168) solid;
+}
+
 .nav-item {
+  color: white;
   margin: 0 20px;
 }
 
-.nav-item a {
-  text-decoration: none;
-  color: white;
-  font-size: 22px;
-  font-weight: 500;
-}
 .nav-item a:hover {
-  color: rgb(215, 215, 215);
+  color: rgb(181, 181, 181);
 }
 .nav-item a:active {
-  color: rgb(178, 178, 178);
+  color: rgb(141, 141, 141);
 }
