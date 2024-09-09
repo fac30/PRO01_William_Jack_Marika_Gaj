@@ -1,38 +1,41 @@
-.tech-slideshow {
-  height: 768px;
-  max-width: 100%;
-  margin: 0 auto;
+.hero {
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-slideshow {
+  margin: auto;
+  height: 500px;
+  width: 100%;
   position: relative;
   overflow: hidden;
   transform: translate3d(0, 0, 0);
 }
 
-.tech-slideshow > div {
-  height: 200px;
+.hero-slideshow > div {
   width: 10752px;
   background: url("../../assets/movie-banner.jpg");
-  background-size: cover;
+  background-size: contain;
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   transform: translate3d(0, 0, 0);
 }
-.tech-slideshow .mover-1 {
-  animation: moveSlideshow 12s linear infinite;
+.hero-slideshow .mover {
+  animation: moveSlideshow 70s linear infinite;
 }
-.tech-slideshow .mover-2 {
+/* .hero-slideshow .mover-2 {
   opacity: 0;
   transition: opacity 0.5s ease-out;
-  background-position: 0 -1344px;
-  animation: moveSlideshow 15s linear infinite;
-}
-/* .tech-slideshow:hover .mover-2 {
-  opacity: 1;
+  background-position: 0 -200px;
+  animation: moveSlideshow 30s linear infinite;
 } */
 
 @keyframes moveSlideshow {
   100% {
-    transform: translateX(-90%);
+    transform: translateX(-65.125%);
   }
 }
