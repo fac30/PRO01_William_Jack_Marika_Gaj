@@ -22,11 +22,14 @@
   color: inherit;
   font-weight: 600;
   color: inherit;
-  font-size: inherit;
+  font-size: 20px;
 }
 
+.company-title {
+  font-size: 48px !important;
+}
 .nav-item {
-  font-size: 22px;
+  /* font-size: 22px; */
   color: white;
   margin: 0 20px;
 }
