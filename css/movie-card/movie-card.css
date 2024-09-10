@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 #movie-cards{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -6,8 +7,22 @@
     margin:auto;
     width:90%;
     margin-bottom: 30px;
+=======
 
+} */
+#movie-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: auto;
+  width: 90%;
+  margin-bottom: 30px;
+  border: solid 3px white;
+>>>>>>> main
+
+  /* grid-template-rows: 2fr */
 }
+<<<<<<< HEAD
 .movie-card{
     cursor: pointer;
     border:solid 3px rgb(225, 62, 160);
@@ -39,3 +54,12 @@
 }
 
 
+=======
+.movie-card {
+  cursor: pointer;
+}
+
+#poster {
+  width: 700px;
+}
+>>>>>>> main

@@ -2,6 +2,10 @@
 const movieCards = document.getElementById('movie-cards')
 import cards  from "./moviedata.js"
 console.log(cards)
+console.log(movieCards);
+
+import cards from "./moviedata.js";
+console.log(cards);
 
 function appendCards() {   
   movieCards.innerHTML = cards.map(card => `
