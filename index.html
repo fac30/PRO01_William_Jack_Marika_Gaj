@@ -80,23 +80,23 @@
             </div>
         </section>
         <section>
-          <form action="#" method="post"> 
+          <form action="#" method="post" onsubmit=""> 
             <label for="contact-first-name">
               First Name
             </label>
-            <input type="text" name="contact-first-name">
+            <input type="text" name="contact-first-name" required>
             <label for="contact-last-name"></label>
               Last Name
             </label>
-            <input type="text" name="contact-last-name">
+            <input type="text" name="contact-last-name" required>
             <label for="contact-email">
              Email
             </label>
-            <input type="text" name="contact-email">
+            <input type="email" name="contact-email" required>
             <label for="contact-email"></label>
               Work with us!
             </label>
-            <textarea type="textarea" name="contact-first-name" rows="10" cols="50"></textarea>
+            <textarea type="textarea" name="contact-first-name" rows="10" cols="50" required></textarea>
             <button type="submit">submit</button>
           </form>
         </section>
