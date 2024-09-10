@@ -1,6 +1,7 @@
 @import url("./nav-bar/nav-bar.css");
 @import url("./hero-banner/hero-banner.css");
 @import url("./footer/footer.css");
+@import url("../css/movie-card/movie-card.css");
 
 html,
 body,
