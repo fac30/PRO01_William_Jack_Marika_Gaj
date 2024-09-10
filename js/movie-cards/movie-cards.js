@@ -9,8 +9,7 @@ console.log(cards)
   function appendCards() {   
          movieCards.innerHTML = cards.map(card => `
          <div id="${card.id}"class="movie-card" >
-         <img src="${card.poster}">
-         <h2>${card.title}</h2>
+         <img id="poster" src="${card.poster}">
          </div>`
          ).join('\n')
 
