@@ -12,15 +12,16 @@
 
 .about-card {
   max-width: 500px;
-  max-height: 700px;
+  max-height: 900px;
   width: 100%;
   margin: 15px 15px;
+  padding-bottom: 10px;
+  border: 5px solid rgb(225, 62, 160);
 }
-.about-card * {
-  margin: 10px 0;
+.about-card > *:not(:first-child) {
+  margin: 15px 15px;
 }
 
 img {
   width: 100%;
-  border-radius: 15px 15px 0px 0px;
 }
