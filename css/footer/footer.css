@@ -1,0 +1,34 @@
+.footer {
+  width: 100%;
+  height: 150px;
+  background-color: rgb(225, 62, 160);
+  margin: 100px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.footer-content-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.address p {
+  margin-top: 10px;
+}
+.address p:first-child {
+  margin-top: 0;
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+}
