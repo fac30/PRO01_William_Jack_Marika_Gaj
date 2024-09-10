@@ -11,7 +11,7 @@
 }
 
 .hero {
-  margin-top: 180px;
+  margin-top: 260px;
   height: calc(100vh - 75px);
   display: flex;
   flex-direction: column;
@@ -20,7 +20,6 @@
 }
 
 .hero-slideshow {
-  /* margin: 0 auto; */
   height: 500px;
   width: 100%;
   position: relative;

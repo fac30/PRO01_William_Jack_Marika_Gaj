@@ -130,4 +130,9 @@ body {
   position: relative;
   background-color: black;
   font-family: "space grotesk", sans-serif;
+  color: white;
+}
+
+.pink-color {
+  color: rgb(225, 62, 160);
 }
