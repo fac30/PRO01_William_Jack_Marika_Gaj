@@ -17,20 +17,15 @@
   align-items: center;
 }
 
-.nav-item:first-child {
-  margin-right: auto;
-}
-
 .nav-item a {
   text-decoration: none;
   color: inherit;
-  font-size: 22px;
   font-weight: 600;
   color: inherit;
+  font-size: inherit;
 }
 
 .nav-item:last-child {
-  color: rgb(225, 62, 160);
   background-color: rgb(26, 26, 26);
   border-radius: 10px;
   padding: 10px 20px;
@@ -38,6 +33,7 @@
 }
 
 .nav-item {
+  font-size: 22px;
   color: white;
   margin: 0 20px;
 }
@@ -47,4 +43,13 @@
 }
 .nav-item a:active {
   color: rgb(141, 141, 141);
+}
+
+.nav-item a span {
+  color: rgb(225, 62, 160);
+}
+
+.nav-item:first-child {
+  margin-right: auto;
+  font-size: 48px;
 }
