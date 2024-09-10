@@ -1,7 +1,7 @@
 @import url("./nav-bar/nav-bar.css");
 @import url("./hero-banner/hero-banner.css");
 @import url("./about-card/about-card.css");
-
+@import url("./footer/footer.css");
 html,
 body,
 div,
@@ -137,3 +137,7 @@ body {
 .pink-color {
   color: rgb(225, 62, 160);
 }
+
+@import url("./nav-bar/nav-bar.css");
+@import url("./hero-banner/hero-banner.css");
+@import url("./footer/footer.css");
