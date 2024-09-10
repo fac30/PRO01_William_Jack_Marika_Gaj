@@ -1,27 +1,22 @@
-const movieCards = document.getElementById('movie-cards');
+const movieCards = document.getElementById("movie-cards");
 
-console.log(movieCards)
+console.log(movieCards);
 
+import cards from "./moviedata.js";
+console.log(cards);
 
-import cards  from "./moviedata.js"
-console.log(cards)
-
-  function appendCards() {   
-         movieCards.innerHTML = cards.map(card => `
+function appendCards() {
+  movieCards.innerHTML = cards
+    .map(
+      (card) => `
          <div id="${card.id}"class="movie-card" >
          <img id="poster" src="${card.poster}">
          </div>`
-         ).join('\n')
+    )
+    .join("\n");
+}
 
-          }
-
-export default appendCards
+export default appendCards;
 // movieCards.addEventListener('click', (cards)=>{
-    
+
 // })
-
-        
-
-
-        
-        
