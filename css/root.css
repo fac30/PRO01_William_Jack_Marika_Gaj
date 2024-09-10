@@ -129,7 +129,13 @@ table {
   border-spacing: 0;
 }
 
+html {
+  overflow-x: hidden;
+  position: relative;
+}
+
 body {
+  overflow-x: hidden;
   position: relative;
   background-color: black;
   font-family: "space grotesk", sans-serif;
@@ -140,6 +146,56 @@ body {
   color: rgb(225, 62, 160);
 }
 
+.hide {
+  display: none;
+}
+
 @import url("./nav-bar/nav-bar.css");
 @import url("./hero-banner/hero-banner.css");
 @import url("./footer/footer.css");
+
+/* ********************* MEDIA QUERIES ******************** */
+
+@media screen and (max-width: 850px) {
+  .company-title {
+    font-size: 32px !important;
+    text-decoration: dotted;
+  }
+
+  .nav-item a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .burger-icon {
+    display: block;
+    color: white;
+    height: 35px;
+    width: 35px;
+    position: fixed;
+    top: 2%;
+    right: 5%;
+    z-index: 2000;
+  }
+
+  .navbar-list {
+    transform: translateX(100%);
+  }
+
+  .mobile-company-title {
+    display: block;
+  }
+
+  .mobile-company-title {
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+
+  .mobile-company-title span {
+    color: rgb(225, 62, 160);
+  }
+}
