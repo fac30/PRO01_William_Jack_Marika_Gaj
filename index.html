@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<script type="module" src="./js/movie-cards/master.js" defer></script>
     <title>Movie page</title>
 </head>
 <body>
@@ -80,23 +81,23 @@
             </div>
         </section>
         <section>
-          <form action="#" method="post" onsubmit=""> 
+          <form action="#" method="post"> 
             <label for="contact-first-name">
               First Name
             </label>
-            <input type="text" name="contact-first-name" required>
+            <input type="text" name="contact-first-name" id="contact-first-name" required>
             <label for="contact-last-name"></label>
               Last Name
             </label>
-            <input type="text" name="contact-last-name" required>
+            <input type="text" name="contact-last-name" id="contact-last-name" required>
             <label for="contact-email">
              Email
             </label>
-            <input type="email" name="contact-email" required>
-            <label for="contact-email"></label>
+            <input type="email" name="contact-email" id="contact-email" required>
+            <label for="contact-message"></label>
               Work with us!
             </label>
-            <textarea type="textarea" name="contact-first-name" rows="10" cols="50" required></textarea>
+            <textarea type="textarea" name="contact-message" id="contact-message" rows="10" cols="50" required></textarea>
             <button type="submit">submit</button>
           </form>
         </section>
