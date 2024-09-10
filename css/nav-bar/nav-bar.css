@@ -1,6 +1,50 @@
 .navbar {
   display: flex;
-  background-color: purple;
+  background-color: black;
   width: 100%;
-  height: 100px;
+  height: 75px;
+  margin-bottom: 10px;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+}
+
+.navbar ul {
+  margin: auto;
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item:first-child {
+  margin-right: auto;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 22px;
+  font-weight: 600;
+  color: inherit;
+}
+
+.nav-item:last-child {
+  color: rgb(225, 62, 160);
+  background-color: rgb(26, 26, 26);
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: 3px rgb(168, 168, 168) solid;
+}
+
+.nav-item {
+  color: white;
+  margin: 0 20px;
+}
+
+.nav-item a:hover {
+  color: rgb(181, 181, 181);
+}
+.nav-item a:active {
+  color: rgb(141, 141, 141);
 }

@@ -1,0 +1,47 @@
+.agency-name {
+  margin-bottom: 100px;
+  font-size: 110px;
+  margin-left: 100px;
+  color: white;
+  font-weight: 600;
+}
+
+.agency-name span {
+  color: rgb(225, 62, 160);
+}
+
+.hero {
+  margin-top: 180px;
+  height: calc(100vh - 75px);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: start;
+}
+
+.hero-slideshow {
+  /* margin: 0 auto; */
+  height: 500px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.hero-slideshow .mover {
+  width: 10752px;
+  background: url("../../assets/movie-banner.jpg");
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+  animation: moveSlideshow 60s linear infinite;
+}
+
+@keyframes moveSlideshow {
+  100% {
+    transform: translateX(-65.125%);
+  }
+}
