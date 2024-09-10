@@ -171,11 +171,11 @@ body {
   .burger-icon {
     display: block;
     color: white;
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
     position: fixed;
-    top: 1%;
-    right: 10%;
+    top: 2%;
+    right: 5%;
     z-index: 2000;
   }
 
@@ -192,7 +192,7 @@ body {
     text-decoration: none;
     font-size: 32px;
     margin-top: 20px;
-    margin-left: 30px;
+    margin-left: 15px;
   }
 
   .mobile-company-title span {
