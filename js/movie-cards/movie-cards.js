@@ -30,7 +30,7 @@ function renderModal(){
   <h3>${card.director}</h3>
   <p>${card.year}</p>
   <p>${card.synopsis}</p>
-  <button>close</button>
+  <buttong>close</button>
   </div>`
   ).join('\n')
 }
