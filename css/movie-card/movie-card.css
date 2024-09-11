@@ -72,7 +72,7 @@
   #movie-cards {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 40px;
     margin: auto;
     width: 95%;
     margin-bottom: 30px;
@@ -84,7 +84,7 @@
     border: solid 5px rgb(225, 62, 160);
     z-index: 0;
     /* background-color: blue; */
-    height: 90%;
+    height: 100%;
   }
 
   .movie-modal * {
@@ -96,9 +96,10 @@
   }
 }
 
-@media (max-width: 750px) {
-  .movie-card {
+@media screen and (max-width: 750px) {
+  .movie-modal {
     /* transform: translate(0); */
-    height: 150%;
+    height: 100%;
+    top: 50%;
   }
 }
