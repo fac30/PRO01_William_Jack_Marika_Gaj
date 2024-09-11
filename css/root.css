@@ -132,6 +132,7 @@ table {
 html {
   overflow-x: hidden;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 body {
