@@ -1,7 +1,10 @@
 
 const movieCards = document.getElementById('movie-cards')
+const dialogBox = document.createElement('dialog')
+dialogBox.setAttribute("id", "modalbox")
 
 import cards from "./moviedata.js";
+
  
 
 function appendCards() {   
@@ -14,25 +17,23 @@ function appendCards() {
 }
 export default appendCards
 
+function popUp(){ 
+  
+  
+  movieCards.addEventListener('click',(event)=>{
 
-        
-// movieCards.addEventListener('click', (e) => {
+  dialogBox.innerHTML = cards.map(card =>
+    `<div id="${card.id}"class="movie-card">
+    <h2>${card.title}</h2>
+    <h3>${card.director}</h3>
+    <p>${card.year}</p>
+    <p>${card.synopsis}</p>
+    <button>close</button>
+    </div>
+    </dialog>
+    `).join('\n')
+})
+document.body.appendChild(dialogBox);
+}
 
-//   //forEach(e.id === card.id) { showModal()}
-
-//   //call moddal
-
-// })
-
-// function renderModal(){
-//   movieCards.innerHTML = cards.map(card => `
-//   <div id="${card.id}"class="movie-card">
-//   <h2>${card.title}</h2>
-//   <h3>${card.director}</h3>
-//   <p>${card.year}</p>
-//   <p>${card.synopsis}</p>
-//   <buttong>close</button>
-//   </div>`
-//   ).join('\n')
-// }
-
+  

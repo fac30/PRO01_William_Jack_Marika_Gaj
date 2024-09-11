@@ -4,17 +4,13 @@
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     margin:auto;
-    width:90%;
+    width:89%;
     margin-bottom: 30px;
-
-  /* grid-template-rows: 2fr */
 }
 .movie-card{
     cursor: pointer;
     border:solid 3px rgb(225, 62, 160);
-    border-radius: 15px;
-    
-   
+    z-index:0;  
 }
 
 @media (max-width: 1059px){
@@ -26,15 +22,11 @@
     margin:auto;
     width:75%;
     margin-bottom: 30px;
-
 }
 
 .movie-card{
     cursor: pointer;
-    border:solid 3px rgb(225, 62, 160);
-    border-radius: 15px;
-    
-   
+    border:solid 3px rgb(225, 62, 160)   
 }
     
 }
