@@ -11,11 +11,12 @@ function appendCards() {
   <img id="poster" src="${card.poster}">
   
   
-  <div id="movie-modal-${card.id}" class="movie-modal"> <h2>${card.title}</h2>
+  <div id="movie-modal-${card.id}" class="movie-modal">
+     <h2>${card.title}</h2>
       <h3>${card.director}</h3>
       <p>${card.year}</p>
       <p>${card.synopsis}</p>
-      <button id="close-modal" class="close-modal">close</button></div>
+      <button id="close-modal" class="close-modal">CLOSE</button></div>
   </div>
   
   
