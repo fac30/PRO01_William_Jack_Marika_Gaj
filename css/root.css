@@ -198,4 +198,33 @@ body {
   .mobile-company-title span {
     color: rgb(225, 62, 160);
   }
+
+  .show-navbar {
+    transform: translateX(0);
+  }
+
+  .company-title {
+    display: none;
+  }
+
+  .nav-item {
+    color: black;
+  }
+
+  .mobile-nav {
+    display: flex;
+    height: 100vh;
+    /* overflow-y: hidden; */
+    background-color: white;
+    color: black;
+    opacity: 1;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: flex-start; */
+    width: 100%;
+  }
+
+  .mobile-nav-button {
+    color: pink;
+  }
 }
