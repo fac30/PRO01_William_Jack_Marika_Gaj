@@ -10,13 +10,16 @@ function appendCards() {
   <div id="${card.id}" class="movie-card">
   <img id="poster" src="${card.poster}">
   
+  
   <div id="movie-modal-${card.id}" class="movie-modal"> <h2>${card.title}</h2>
       <h3>${card.director}</h3>
       <p>${card.year}</p>
       <p>${card.synopsis}</p>
-      <button>close</button></div>
-
-  </div>`
+      <button id="close-modal" class="close-modal">close</button></div>
+  </div>
+  
+  
+  `
   ).join('\n')
   
 }
@@ -26,21 +29,35 @@ function appendCards() {
 
   const movieCardElements = document.querySelectorAll(".movie-card")
   const movieModals = document.querySelectorAll(".movie-modal")
+  const modalClose = document.querySelectorAll(".close-modal")
 
   movieCardElements.forEach((element) => {
 
-    element.addEventListener("click", function() {
+    element.addEventListener("dblclick", function() {
       selectedModal = `movie-modal-${element.id}`
       renderModal()
     })
 
   })
+  
+  modalClose.forEach((buttonEl)=> {
+    buttonEl.addEventListener('click', () => {
+      selectedModal = "";
+      console.log(selectedModal)
+      renderModal();
+    })
+  })
+
+
+
+
 
   const renderModal = () => {
 
     movieModals.forEach((modal) => {
 
       if (modal.id === selectedModal) {
+        console.log(modal, selectedModal)
         modal.classList.add("show")
 
       } if (modal.id !== selectedModal) {
