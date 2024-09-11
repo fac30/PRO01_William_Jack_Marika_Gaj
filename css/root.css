@@ -179,8 +179,20 @@ body {
     z-index: 2000;
   }
 
+  .navbar {
+  }
+
   .navbar-list {
     transform: translateX(100%);
+    height: calc(100vh - 50px);
+
+    background-color: white;
+    display: flex;
+    color: black;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: flex-start; */
+    width: 100%;
   }
 
   .mobile-company-title {
@@ -197,5 +209,26 @@ body {
 
   .mobile-company-title span {
     color: rgb(225, 62, 160);
+  }
+
+  .show-navbar {
+    transform: translateX(0);
+  }
+
+  .company-title {
+    display: none;
+  }
+
+  .nav-item {
+    margin-top: 50px;
+    color: black;
+  }
+
+  .mobile-nav {
+    /* overflow-y: hidden; */
+  }
+
+  .mobile-nav-button {
+    color: pink;
   }
 }
