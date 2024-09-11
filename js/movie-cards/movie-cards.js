@@ -2,37 +2,72 @@
 const movieCards = document.getElementById('movie-cards')
 
 import cards from "./moviedata.js";
+
  
 
 function appendCards() {   
   movieCards.innerHTML = cards.map(card => `
-  <div id="${card.id}"class="movie-card">
+  <div id="${card.id}" class="movie-card">
   <img id="poster" src="${card.poster}">
-  </div>`
+  
+  
+  <div id="movie-modal-${card.id}" class="movie-modal"> <h2>${card.title}</h2>
+      <h3>${card.director}</h3>
+      <p>${card.year}</p>
+      <p>${card.synopsis}</p>
+      <button id="close-modal" class="close-modal">close</button></div>
+  </div>
+  
+  
+  `
   ).join('\n')
   
 }
-export default appendCards
+
+ const movieEventListener = () => {
+  let selectedModal = ""
+
+  const movieCardElements = document.querySelectorAll(".movie-card")
+  const movieModals = document.querySelectorAll(".movie-modal")
+  const modalClose = document.querySelectorAll(".close-modal")
+
+  movieCardElements.forEach((element) => {
+
+    element.addEventListener("dblclick", function() {
+      selectedModal = `movie-modal-${element.id}`
+      renderModal()
+    })
+
+  })
+  
+  modalClose.forEach((buttonEl)=> {
+    buttonEl.addEventListener('click', () => {
+      selectedModal = "";
+      console.log(selectedModal)
+      renderModal();
+    })
+  })
 
 
-        
-// movieCards.addEventListener('click', (e) => {
 
-//   //forEach(e.id === card.id) { showModal()}
 
-//   //call moddal
 
-// })
+  const renderModal = () => {
 
-// function renderModal(){
-//   movieCards.innerHTML = cards.map(card => `
-//   <div id="${card.id}"class="movie-card">
-//   <h2>${card.title}</h2>
-//   <h3>${card.director}</h3>
-//   <p>${card.year}</p>
-//   <p>${card.synopsis}</p>
-//   <buttong>close</button>
-//   </div>`
-//   ).join('\n')
-// }
+    movieModals.forEach((modal) => {
 
+      if (modal.id === selectedModal) {
+        console.log(modal, selectedModal)
+        modal.classList.add("show")
+
+      } if (modal.id !== selectedModal) {
+        modal.classList.remove("show")
+      }
+    })
+  }
+}
+
+
+
+
+export  {appendCards, movieEventListener}
