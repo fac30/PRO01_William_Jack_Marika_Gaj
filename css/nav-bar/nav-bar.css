@@ -14,23 +14,14 @@ header {
   top: 0;
 }
 
-/* .burger-icon {
-  color: white;
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  top: 0.25%;
-  right: 10%;
-  z-index: 2000;
-} */
-
-.navbar ul {
+.navbar-list {
   margin: auto;
   margin-top: 20px;
   width: 98%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all 0.5s ease-in;
 }
 
 .nav-item a {
@@ -45,7 +36,6 @@ header {
   font-size: 48px !important;
 }
 .nav-item {
-  /* font-size: 22px; */
   color: white;
   margin: 0 20px;
 }
@@ -73,3 +63,7 @@ header {
   margin-right: auto;
   font-size: 48px;
 }
+
+/* ******************************* MOBILE NAV ********************** */
+
+
