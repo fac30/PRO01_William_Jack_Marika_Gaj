@@ -32,101 +32,101 @@
     <main>
 
 
-        <section class="hero" id="hero-section">
+        <section class="hero" id="hero-section" role="region" aria-roledescription="slideshow" aria-labelledby="hero slideshow">
                 <div class="hero-slideshow">
                     <div class="mover"></div>
                   </div>
           </section>
-        <section id="about-section" tabindex="0">
+        <section id="about-section" tabindex="0" aria-labelledby="team-section">
             <h2 class="about-heading">Meet the Team</h2>
             <div class="about-container">
-                <div class="about-card" tabindex="0">
+                <article class="about-card" tabindex="0" aria-labelledby="team-member-1">
                     <img src="./assets/profile-images/Portrait of Rachel Montgomery.jpg" alt="Rachel's portrait">
                     <h3><strong>Rachel "Reel Buff" Montgomery</strong></h3>
                     <p>Job Title: Marketing Manager</p>
                     <p>Favorite Genre: Romantic Comedies</p>
                     <p>I’m always the one bringing movie references into our marketing strategies. I love a good rom-com, especially When Harry Met Sally. It’s my go-to for laughs, and I can probably quote the whole movie! I organize themed movie marathons every weekend and love hosting trivia nights for 90s rom-com fans.</p>
-                </div>
+                </article>
 
-                <div class="about-card" tabindex="0">
+                <article class="about-card" tabindex="0" aria-labelledby="team-member-2">
                     <img src="./assets/profile-images/Portrait of Derek Hernandez.jpg" alt="Derek's portrait">
                     <h3><strong>Derek "Film Geek" Hernandez</strong></h3>
                     <p>Job Title: Software Developer</p>
                     <p>Favorite Genre: Science Fiction</p>
                     <p>I’m a huge sci-fi fan. Films like Blade Runner and The Matrix really inspire me, especially when it comes to coding. I love diving deep into movie analysis and drawing parallels between film tech and real tech. In my spare time, I’ve been working on my own short sci-fi film, experimenting with CGI and futuristic themes</p>
-                </div>
+                </article>
 
-                <div class="about-card" tabindex="0">
+                <article class="about-card" tabindex="0" aria-labelledby="team-member-3">
                     <img src="./assets/profile-images/Portrait of Claire Mitchell.jpg" alt="Claire's portrait">
                     <h3><strong>Claire "Critic-at-Heart" Mitchell</strong></h3>
                     <p>Job Title: Content Writer</p>
                     <p>Favorite Genre: Indie Dramas</p>
                     <p>I’m passionate about storytelling, especially in indie films. I love directors like Greta Gerwig and Wes Anderson because they bring such unique perspectives. Writing for me is like dissecting films—I often find myself drawing comparisons between film narratives and real life in my blogs. Oh, and I have a podcast where I discuss indie films every month!</p>
-                </div>
+                </article>
 
-                <div class="about-card" tabindex="0">
+                <article class="about-card" tabindex="0" aria-labelledby="team-member-4">
                     <img src="./assets/profile-images/Portrait of Josh Thompson.jpg" alt="Josh's portrait">
                     <h3><strong>Josh "Animated Guru" Thompson</strong></h3>
                     <p>Job Title: Graphic Designer</p>
                     <p>Favorite Genre: Animated Films</p>
                     <p>’m all about animated films. The artistry and creativity behind movies like Toy Story and Spirited Away inspire my work as a graphic designer. My desk is full of memorabilia from my favorite animated characters, and I’m constantly finding ways to bring that whimsical energy into my designs. Someday, I hope to create my own animated short film.</p>
-                </div>
+                </article>
 
-                <div class="about-card" tabindex="0">
+                <article class="about-card" tabindex="0" aria-labelledby="team-member-5">
                     <img src="./assets/profile-images/Portrait of Eli Johnson.jpg" alt="Eli's portrait">
                     <h3><strong>Eli "Old School" Johnson</strong></h3>
                     <p>Job Title: Customer Support Lead</p>
                     <p>Favorite Genre: Classic Hollywood Films</p>
                     <p>I’m a sucker for the Golden Age of Hollywood. Casablanca was the movie that got me hooked on classic cinema as a kid. At the office, I love dropping fun facts about old films and actors, and I’ve got a vintage projector that I use to host black-and-white movie nights for friends and coworkers.</p>
-                </div>
+                </article>
 
-                <div class="about-card" tabindex="0">
+                <article class="about-card" tabindex="0" aria-labelledby="team-member-6">
                     <img src="./assets/profile-images/Portrait of Samantha Patel.jpg" alt="Samantha's portrait">
                     <h3><strong>Samantha "Thrill Seeker" Patel</strong></h3>
                     <p>Job Title: Event Coordinator</p>
                     <p>Favorite Genre: Action/Adventure</p>
                     <p>I love action-packed films—anything that gets your heart racing, like Mad Max or Indiana Jones. I always try to bring that same excitement into the events I plan, whether it's a scavenger hunt or a surprise obstacle course. I live for adventure both on and off the screen. Fun fact: I once bungee jumped after binge-watching an Impossible Mission marathon!</p>
-                </div>
+                </article>
             
             </div>
         </section>
-        <section id="work-section" tabindex="0">
+        <section id="work-section" tabindex="0" aria-labelledby="work-section">
           <div id="movie-cards"></div>
         </section>
-        <section id="contact-section" tabindex="0">
-          <div class="contact-container">
-            <form action="#" method="post" onsubmit="" class="contact-form"> 
+        <section id="contact-section" tabindex="0" aria-labelledby="form-section">
+          <div class="contact-container" role="form">
+            <form action="#" method="post" onsubmit="" class="contact-form" aria-labelledby="contact-heading"> 
               <label for="contact-first-name">
                 First Name
               </label>
-              <input type="text" name="contact-first-name" id="contact-first-name" required placeholder="Name...">
+              <input type="text" name="contact-first-name" id="contact-first-name" required aria-required="true" placeholder="Name...">
               <label for="contact-last-name"></label>
                 Last Name
               </label>
-              <input type="text" name="contact-last-name" id="contact-last-name" required placeholder="Last Name...">
+              <input type="text" name="contact-last-name" id="contact-last-name" required aria-required="true" placeholder="Last Name...">
               <label for="contact-email">
               Email
               </label>
-              <input type="email" name="contact-email" id="contact-email" required placeholder="Email...">
+              <input type="email" name="contact-email" id="contact-email" required aria-required="true" placeholder="Email...">
               <label for="contact-message"></label>
                 Work with us!
               </label>
-              <textarea type="textarea" name="contact-message" id="contact-message" rows="10" cols="50" required placeholder="Hello World!"></textarea>
-              <button type="submit" id="contact-submit">submit</button>
+              <textarea type="textarea" name="contact-message" id="contact-message" rows="10" cols="50" required aria-required="true" placeholder="Hello World!"></textarea>
+              <button type="submit" id="contact-submit" aria-label="submit form">submit</button>
             </form>
           </div>
         </section>
     </main>
     
-    <footer class="footer">
+    <footer class="footer" aria-labelledby="footer heading">
       <div class="footer-content-container">
-        <div class="footer-contact">
+        <div class="footer-contact" aria-labelledby="contact heading">
           <h3 class="footer-h3">Contact Us</h3>
           <p>Email: <a href="mailto:info@youragency.com">info@youragency.com</a></p>
           <p>Phone: <a href="tel:+1234567890">(123) 456-7890</a></p>
           <p>Address: 1234 Film Street, Studio City, CA 90001</p>
         </div>
-        <div class="footer-social">
+        <div class="footer-social" aria-labelledby="social heading">
           <h3 class="footer-h3">Follow Us</h3>
           <ul class="footer-ul">
             <li ><a  href="https://www.facebook.com/" target="_blank">Facebook</a></li>
@@ -135,19 +135,19 @@
             <li ><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
           </ul>
         </div>
-        <div class="footer-privacy">
+        <div class="footer-privacy" aria-labelledby="footer heading">
           <h3 class="footer-h3">Privacy</h3>
           <p>&copy; 2024 Red Horizon Films. All rights reserved.</p>
           <p><a href="">Privacy Policy</a></p>
           <p><a href="">Terms of Service</a></p>
         </div>
-        <div class="footer-contributors">
+        <div class="footer-contributors" aria-labelledby="Contributors heading">
           <h3>Contributors</h3>
           <ul class="footer-ul">
-            <li ><a href="https://github.com/jackcasstlesjones" target="_blank">Jack</a></li>
-            <li ><a  href="https://github.com/Gaajia" target="_blank">Gaj</a></li>
-            <li ><a  href="https://github.com/MarikaBBB" target="_blank">Marika</a></li>
-            <li ><a  href="https://github.com/william-man" target="_blank">William</a></li>
+            <li ><a href="https://github.com/jackcasstlesjones" aria-label="visit Jack's github" target="_blank">Jack</a></li>
+            <li ><a  href="https://github.com/Gaajia" target="_blank" aria-label="visit Gaj's github">Gaj</a></li>
+            <li ><a  href="https://github.com/MarikaBBB" target="_blank" aria-label="visit Marika's github">Marika</a></li>
+            <li ><a  href="https://github.com/william-man" target="_blank" aria-label="visit William's github">William</a></li>
           </ul> 
 
         </div>
