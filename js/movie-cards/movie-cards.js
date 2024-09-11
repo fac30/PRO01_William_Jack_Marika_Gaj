@@ -1,12 +1,13 @@
-const movieCards = document.getElementById("movie-cards");
+
+const movieCards = document.getElementById('movie-cards')
 
 import cards from "./moviedata.js";
 
-function appendCards() {
-  movieCards.innerHTML = cards
-    .map(
-      (card) => `
-  <div id="${card.id}" class="movie-card" tabindex=0>
+ 
+
+function appendCards() {   
+  movieCards.innerHTML = cards.map(card => `
+  <div id="${card.id}" class="movie-card">
   <img id="poster" src="${card.poster}">
   
   
@@ -20,16 +21,16 @@ function appendCards() {
   
   
   `
-    )
-    .join("\n");
+  ).join('\n')
+  
 }
 
-const movieEventListener = () => {
-  let selectedModal = "";
+ const movieEventListener = () => {
+  let selectedModal = ""
 
-  const movieCardElements = document.querySelectorAll(".movie-card");
-  const movieModals = document.querySelectorAll(".movie-modal");
-  const modalClose = document.querySelectorAll(".close-modal");
+  const movieCardElements = document.querySelectorAll(".movie-card")
+  const movieModals = document.querySelectorAll(".movie-modal")
+  const modalClose = document.querySelectorAll(".close-modal")
 
   movieCardElements.forEach((element) => {
 
@@ -47,25 +48,17 @@ const movieEventListener = () => {
       selectedModal = "";
       console.log(selectedModal)
       renderModal();
-    });
-    element.addEventListener("keydown", (event) => {
-      if (event.key === "Enter") {
-        selectedModal = `movie-modal-${element.id}`;
-        renderModal();
-      }
-    });
-  });
+    })
+  })
 
-  modalClose.forEach((buttonEl) => {
-    buttonEl.addEventListener("click", () => {
-      selectedModal = "";
-      console.log(selectedModal);
-      renderModal();
-    });
-  });
+
+
+
 
   const renderModal = () => {
+
     movieModals.forEach((modal) => {
+
       if (modal.id === selectedModal) {
         console.log(selectedModal)
         modal.classList.add("show")
@@ -73,11 +66,11 @@ const movieEventListener = () => {
       } if (modal.id !== selectedModal) {
         modal.classList.remove("show")
       }
-      if (modal.id !== selectedModal) {
-        modal.classList.remove("show");
-      }
-    });
-  };
-};
+    })
+  }
+}
 
-export { appendCards, movieEventListener };
+
+
+
+export  {appendCards, movieEventListener}
