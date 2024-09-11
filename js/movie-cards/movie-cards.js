@@ -33,7 +33,8 @@ function appendCards() {
 
   movieCardElements.forEach((element) => {
 
-    element.addEventListener("dblclick", function() {
+    element.addEventListener("click", function() {
+      console.log("triggered")
       selectedModal = `movie-modal-${element.id}`
       renderModal()
     })
@@ -41,7 +42,8 @@ function appendCards() {
   })
   
   modalClose.forEach((buttonEl)=> {
-    buttonEl.addEventListener('click', () => {
+    buttonEl.addEventListener('click', function(event) {
+      event.stopPropagation();
       selectedModal = "";
       console.log(selectedModal)
       renderModal();
@@ -57,7 +59,7 @@ function appendCards() {
     movieModals.forEach((modal) => {
 
       if (modal.id === selectedModal) {
-        console.log(modal, selectedModal)
+        console.log(selectedModal)
         modal.classList.add("show")
 
       } if (modal.id !== selectedModal) {
