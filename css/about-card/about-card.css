@@ -22,6 +22,14 @@
   margin: 15px 15px;
 }
 
+.about-card h3 strong {
+  font-size: 320px;
+}
+
+.about-card p {
+  line-height: 22px;
+}
+
 img {
   width: 100%;
 }
