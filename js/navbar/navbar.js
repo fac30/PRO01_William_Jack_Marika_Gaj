@@ -6,13 +6,18 @@ const hideAndDisplayList = () => {
   navbarList.classList.toggle("show-navbar");
   navbarList.classList.toggle("mobile-nav");
   //   navbarList.classList.remove("navbar-list");
-  
 };
 
-const myEventListener = () => {
+const navEventListeners = () => {
   burgerIcon.addEventListener("click", function () {
     hideAndDisplayList();
   });
+
+  navItems.forEach((element) => {
+    element.addEventListener("click", function () {
+      hideAndDisplayList();
+    });
+  });
 };
 
-export default myEventListener;
+export default navEventListeners;
