@@ -5,7 +5,6 @@ const navItems = document.querySelectorAll(".nav-item");
 const hideAndDisplayList = () => {
   navbarList.classList.toggle("show-navbar");
   navbarList.classList.toggle("mobile-nav");
-  //   navbarList.classList.remove("navbar-list");
 };
 
 const navEventListeners = () => {
