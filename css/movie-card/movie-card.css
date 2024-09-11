@@ -6,23 +6,33 @@
     margin:auto;
     width:89%;
     margin-bottom: 30px;
+    
 }
+
 .movie-card{
     cursor: pointer;
     border:solid 5px rgb(225, 62, 160);
     z-index:0;  
+    position: relative;
+}
+
+
+.movie-modal {
+    width: 500px;
+    height: 700px;
+    background-color: pink;
+    z-index: 3000;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+
 }
 
 .show {
     display: block;
-}
-
-.movie-modal {
-    width: 500px;
-    height: 500px;
-    background-color: pink;
-    z-index: 3000;
-    display: none;
 }
 
 @media (max-width: 1059px){

@@ -9,39 +9,44 @@ function appendCards() {
   movieCards.innerHTML = cards.map(card => `
   <div id="${card.id}" class="movie-card">
   <img id="poster" src="${card.poster}">
-  </div>
-  <div id="${card.id}" class="movie-modal"> <h2>${card.title}</h2>
+  
+  <div id="movie-modal-${card.id}" class="movie-modal"> <h2>${card.title}</h2>
       <h3>${card.director}</h3>
       <p>${card.year}</p>
       <p>${card.synopsis}</p>
-      <button>close</button></div>`
+      <button>close</button></div>
+
+  </div>`
   ).join('\n')
   
 }
 
  const movieEventListener = () => {
-  let renderedModal = ""
+  let selectedModal = ""
 
   const movieCardElements = document.querySelectorAll(".movie-card")
+  const movieModals = document.querySelectorAll(".movie-modal")
 
-  
   movieCardElements.forEach((element) => {
-    console.log("hellooooo")
+
     element.addEventListener("click", function() {
-      console.log(element.id)
-      renderedModal = element.id
-      renderModal(element)
+      selectedModal = `movie-modal-${element.id}`
+      renderModal()
     })
 
   })
 
-  const renderModal = (element) => {
-    console.log(element)
-    if (element.id === renderedModal) {
-      console.log(element.id)
-      element.classList.add("show")
-      element.style.display = "block"
-    }
+  const renderModal = () => {
+
+    movieModals.forEach((modal) => {
+
+      if (modal.id === selectedModal) {
+        modal.classList.add("show")
+
+      } if (modal.id !== selectedModal) {
+        modal.classList.remove("show")
+      }
+    })
   }
 }
 
