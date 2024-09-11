@@ -9,8 +9,20 @@
 }
 .movie-card{
     cursor: pointer;
-    border:solid 3px rgb(225, 62, 160);
+    border:solid 5px rgb(225, 62, 160);
     z-index:0;  
+}
+
+.show {
+    display: block;
+}
+
+.movie-modal {
+    width: 500px;
+    height: 500px;
+    background-color: pink;
+    z-index: 3000;
+    display: none;
 }
 
 @media (max-width: 1059px){
@@ -26,7 +38,7 @@
 
 .movie-card{
     cursor: pointer;
-    border:solid 3px rgb(225, 62, 160)   
+    border:solid 5px rgb(225, 62, 160)   
 }
     
 }
