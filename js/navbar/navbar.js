@@ -11,6 +11,15 @@ const hideAndDisplayList = () => {
 const navEventListeners = () => {
   burgerIcon.addEventListener("click", function () {
     hideAndDisplayList();
+    const isExpanded = burgerIcon.getAttribute("aria-expanded");
+    burgerIcon.setAttribute(
+      "aria-expanded",
+      isExpanded === "false" ? "true" : "false"
+    );
+    burgerIcon.setAttribute(
+      "aria-label",
+      isExpanded === "false" ? "open navigation menu" : "close navigation menu"
+    );
   });
 
   navItems.forEach((element) => {
