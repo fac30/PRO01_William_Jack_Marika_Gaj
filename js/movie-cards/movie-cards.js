@@ -10,20 +10,12 @@ function appendCards() {
   <img id="poster" src="${card.poster}">
   
   
-<<<<<<< HEAD
   <div id="movie-modal-${card.id}" class="movie-modal">
      <h2>${card.title}</h2>
       <h3>${card.director}</h3>
       <p>${card.year}</p>
       <p>${card.synopsis}</p>
       <button id="close-modal" class="close-modal">CLOSE</button></div>
-=======
-  <div id="movie-modal-${card.id}" class="movie-modal" tabindex=0> <h2>${card.title}</h2>
-      <h3>${card.director}</h3>
-      <p>${card.year}</p>
-      <p>${card.synopsis}</p>
-      <button id="close-modal" class="close-modal" tabindex=0>close</button></div>
->>>>>>> main
   </div>
   
   
@@ -40,7 +32,6 @@ const movieEventListener = () => {
   const modalClose = document.querySelectorAll(".close-modal");
 
   movieCardElements.forEach((element) => {
-<<<<<<< HEAD
 
     element.addEventListener("click", function() {
       console.log("triggered")
@@ -55,10 +46,6 @@ const movieEventListener = () => {
       event.stopPropagation();
       selectedModal = "";
       console.log(selectedModal)
-=======
-    element.addEventListener("dblclick", function () {
-      selectedModal = `movie-modal-${element.id}`;
->>>>>>> main
       renderModal();
     });
     element.addEventListener("keydown", (event) => {
@@ -80,16 +67,11 @@ const movieEventListener = () => {
   const renderModal = () => {
     movieModals.forEach((modal) => {
       if (modal.id === selectedModal) {
-<<<<<<< HEAD
         console.log(selectedModal)
         modal.classList.add("show")
 
       } if (modal.id !== selectedModal) {
         modal.classList.remove("show")
-=======
-        console.log(modal, selectedModal);
-        modal.classList.add("show");
->>>>>>> main
       }
       if (modal.id !== selectedModal) {
         modal.classList.remove("show");
