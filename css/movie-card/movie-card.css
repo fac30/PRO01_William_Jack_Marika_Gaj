@@ -4,13 +4,13 @@
   gap: 10px;
   margin: auto;
   width: 89%;
-  margin-bottom: 30px;
+  margin-bottom: 184px;
 }
 
 .movie-card {
   position: relative;
   cursor: pointer;
-  border: solid 5px rgb(225, 62, 160);
+  /* border: solid 5px rgb(225, 62, 160); */
   z-index: 0;
 }
 

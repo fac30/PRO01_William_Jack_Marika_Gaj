@@ -1,6 +1,6 @@
 .about-heading {
-  font-size: 25px;
-  margin: 15px 15px;
+  font-size: 42px;
+  margin: 48px 15px;
   text-align: center;
 }
 .about-container {
@@ -16,7 +16,7 @@
   width: 100%;
   margin: 15px 15px;
   padding-bottom: 10px;
-  border: 5px solid rgb(225, 62, 160);
+  /* border: 5px solid rgb(225, 62, 160); */
 }
 .about-card > *:not(:first-child) {
   margin: 15px 15px;
