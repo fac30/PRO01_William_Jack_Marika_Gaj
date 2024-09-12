@@ -15,28 +15,44 @@
   align-items: center;
   vertical-align: middle;
   gap: 15px;
+  background-color: rgb(225, 62, 160);
   border: 5px solid rgb(225, 62, 160);
-  border-radius: 5px;
+  border-radius: 9px;
   padding: 20px;
 }
 
+.form-label {
+  margin-top: 16px;
+  font-size: 22px;
+}
+
 input {
+  border-radius: 8px;
+  border: none;
+  padding: 8px;
   max-width: 360px;
   width: 100%;
+  font-family: inherit;
 }
 
 textarea {
+  padding: 8px;
   max-width: 360px;
   width: 100%;
+  font-family: inherit;
 }
 
 #contact-submit {
+  margin-top: 30px;
   max-width: 360px;
   width: 100%;
   padding: 15px;
   margin-bottom: 20px;
-  border-color: rgb(250, 250, 250);
+  /* border-color: rgb(250, 250, 250);s */
   background-color: rgb(26, 26, 26);
-  color: rgb(225, 62, 160);
+
+  color: white;
+  text-transform: capitalize;
+  font-size: 20px;
   border-radius: 5px;
 }
