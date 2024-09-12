@@ -17,7 +17,7 @@
 .movie-modal {
   cursor: auto;
   width: 90%;
-  height: 50%;
+  height: 75%;
   background-color: black;
   /* color: white; */
   z-index: 3000;
